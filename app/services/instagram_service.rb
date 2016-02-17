@@ -1,7 +1,8 @@
 class InstagramService
-  attr_reader :connection
+  attr_reader :connection, :current_user
 
-  def initialize
+  def initialize(current_user)
+    @current_user = current_user
     @connection = Faraday.new(:url => 'https://api.instagram.com/v1/') do |faraday|
        faraday.request :url_encoded
        faraday.response :logger
@@ -9,11 +10,11 @@ class InstagramService
      end
   end
 
-  def user_info(current_user)
+  def user_info
     parse(connection.get("users/self/?access_token=#{current_user.token}"))
   end
 
-  def user_media(current_user)
+  def user_media
     parse(connection.get("users/self/media/recent/?access_token=#{current_user.token}"))
   end
 

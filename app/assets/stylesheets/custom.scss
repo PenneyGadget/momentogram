@@ -1,7 +1,6 @@
 .container-home {
-  background-color: #1B3C59;
+  background-color: #451433;
   min-height: 100vh;
-  padding-top: 20vh;
   text-align: center;
 }
 
@@ -14,6 +13,13 @@
 h1.home {
   font-size: 60px;
   color: #F8BB44;
+}
+
+.home-message.rounded {
+  margin-top: 100px;
+  border-style: solid;
+  padding: 50px;
+  border-radius: 10px;
 }
 
 a.btn.btn-lg.btn-default.btn-home {
@@ -31,4 +37,20 @@ a.btn.btn-lg.btn-default.btn-home:hover {
 
 img.img-circle.img-thumbnail.home-image {
   height: 200px;
+}
+
+.poppies {
+  padding-top: 20vh;
+}
+
+.dashboard {
+  margin-top: 50px;
+}
+
+.dashboard-buttons {
+  margin-top: 150px;
+}
+
+.user-bio {
+  font-family: 'Over the Rainbow', cursive;
 }
