@@ -14,4 +14,22 @@ class User < ActiveRecord::Base
     user.save
     user
   end
+
+  def self.service
+    InstagramService.new
+  end
+
+  def self.info(current_user)
+    service.user_info(current_user)
+  end
+
+  def self.media(current_user)
+    service.user_media(current_user)
+  end
+
+  private
+
+  def self.build_object(data)
+    OpenStruct.new(data)
+  end
 end
