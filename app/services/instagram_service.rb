@@ -14,14 +14,32 @@ class InstagramService
     parse(connection.get("users/self/?access_token=#{current_user.token}"))
   end
 
+  def user_follows
+    parse(connection.get("users/self/follows?access_token=#{current_user.token}"))
+  end
+
+  def user_followers
+    parse(connection.get("users/self/followed-by?access_token=#{current_user.token}"))
+  end
+
   def user_media
     photos_data = parse(connection.get("users/self/media/recent/?access_token=#{current_user.token}"))
     photos_data[:data].map do |photo|
       media = Media.new({image_url: photo[:images][:low_resolution][:url],
-                 likes: photo[:likes][:count]})
+                         likes: photo[:likes][:count],
+                         media_id: photo[:id],
+                         comments: add_comments(photo[:id])})
       add_location(photo, media)
       add_caption(photo, media)
     end
+  end
+
+  def add_comments(media_id)
+    comments = []
+    parse(connection.get("media/#{media_id}/comments?access_token=#{current_user.token}"))[:data].each do |c|
+      comments << c[:text]
+    end
+    comments
   end
 
   def add_location(photo, media)
@@ -36,6 +54,11 @@ class InstagramService
       media.caption = photo[:caption][:text]
     end
     media
+  end
+
+  def find_media_object(media_id)
+    binding.pry
+    parse(connection.get("media/#{media_id}?access_token=#{current_user.token}"))
   end
 
   private

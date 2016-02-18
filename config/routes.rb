@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :photos, only: [:index]
+  resources :photos, only: [:index, :show]
 
   get 'dashboard', to: 'dashboard#show'
   root to: 'home#show'

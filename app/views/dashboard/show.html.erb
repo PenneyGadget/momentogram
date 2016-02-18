@@ -4,10 +4,11 @@
   <div class="dashboard col-md-6">
     <h1 class="home"><%= current_user.nickname %></h1><br>
     <%= image_tag current_user.image_url, class: "img-circle img-thumbnail home-image" %><br>
-    <h3 class="home"><%= current_user.email %></h3><br>
+    <h3 class="home user-email"><%= current_user.email %></h3><br>
     <h3 class="home user-bio"><%= current_user.bio %></h3><br>
-    <h4 class="home">Followers: <%= @user_info[:data][:counts][:followed_by] %></h4><br>
-    <h4 class="home">Following: <%= @user_info[:data][:counts][:follows] %></h4><br>
+    <h3 class="home user-website"><%= link_to current_user.website_url, current_user.website_url %></h3><br>
+    <h4 class="home">Followers: <%= @user_info[:data][:counts][:followed_by] %></h4>
+    <h4 class="home">Following: <%= @user_info[:data][:counts][:follows] %></h4>
   </div>
   <div class="col-md-2"></div>
   <div class="dashboard-buttons col-md-4">
