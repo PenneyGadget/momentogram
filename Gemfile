@@ -12,6 +12,7 @@ gem 'pg'
 gem 'omniauth'
 gem 'omniauth-instagram'
 gem 'faraday'
+gem 'font-awesome-sass', '~> 4.5.0'
 
 group :development, :test do
   gem 'byebug'

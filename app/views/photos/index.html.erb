@@ -1,2 +1,16 @@
 <div class="container-home">
+  <div class="row images">
+    <% @images.each do |image| %>
+    <div class="col-md-6">
+      <div class="user-image">
+        <%= image_tag(image.image_url) %>
+      </div>
+      <div class="image-info rounded">
+        <%= image.caption %><br>
+        <%= image.location %><br>
+        <i class="fa fa-heart"></i> :  <%= image.likes %><br>
+      </div>
+    </div>
+    <% end %>
+  </div>
 </div>

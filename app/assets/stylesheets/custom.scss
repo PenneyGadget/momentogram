@@ -54,3 +54,28 @@ img.img-circle.img-thumbnail.home-image {
 .user-bio {
   font-family: 'Over the Rainbow', cursive;
 }
+
+.image-info {
+  border-style: solid;
+  padding: 5px;
+  border-radius: 10px;
+  width: 320px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  border-width: 2px;
+  color: #60BFBF;
+  font-weight: 100;
+}
+
+.user-image {
+  padding: 20px;
+}
+
+.images {
+  padding: 60px;
+}
+
+.fa-heart {
+  color: #60BFBF;
+  content: "\f004";
+}

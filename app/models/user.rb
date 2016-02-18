@@ -15,21 +15,4 @@ class User < ActiveRecord::Base
     user
   end
 
-  # def service
-  #   InstagramService.new(self)
-  # end
-  #
-  # def info
-  #   service.user_info
-  # end
-  #
-  # def media
-  #   service.user_media
-  # end
-  #
-  # private
-  #
-  # def build_object(data)
-  #   OpenStruct.new(data)
-  # end
 end
