@@ -36,8 +36,8 @@ class InstagramService
 
   def add_comments(media_id)
     comments = []
-    parse(connection.get("media/#{media_id}/comments?access_token=#{current_user.token}"))[:data].each do |c|
-      comments << c[:text]
+    parse(connection.get("media/#{media_id}/comments?access_token=#{current_user.token}"))[:data].each do |comment|
+      comments << comment[:text]
     end
     comments
   end
@@ -57,7 +57,6 @@ class InstagramService
   end
 
   def find_media_object(media_id)
-    binding.pry
     parse(connection.get("media/#{media_id}?access_token=#{current_user.token}"))
   end
 

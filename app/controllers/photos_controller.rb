@@ -5,7 +5,8 @@ class PhotosController < ApplicationController
   end
 
   def show
-    @image = InstagramService.new(current_user).find_media_object(params[:id])
+    image_hash = InstagramService.new(current_user).find_media_object(params[:id])
+    @image = image_hash[:data][:images][:low_resolution][:url]
   end
 
 end
