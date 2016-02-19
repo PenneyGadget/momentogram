@@ -1,0 +1,662 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.instagram.com/v1/users/self/?access_token=269242292.27722ba.9ac02877c3ab47cda4bdbf2648f6876e
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Ratelimit-Remaining:
+      - '411'
+      Content-Language:
+      - en
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      Vary:
+      - Cookie, Accept-Language, Accept-Encoding
+      X-Ratelimit-Limit:
+      - '500'
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Date:
+      - Fri, 19 Feb 2016 03:53:34 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Set-Cookie:
+      - csrftoken=5a2befba447913379a7f38a3e24eaa0b; expires=Fri, 17-Feb-2017 03:53:34
+        GMT; Max-Age=31449600; Path=/
+      - s_network=; expires=Fri, 19-Feb-2016 04:53:34 GMT; Max-Age=3600; Path=/
+      - sessionid=IGSC74944d120f4e2c2b4db1460c6fa985599b5666743ee52a6bc1b8c416e3d0efb1%3AnSImGJVEaIp8fbOpE4L3a05ImgFFXM4g%3A%7B%22asns%22%3A%7B%2267.6.173.89%22%3A209%2C%22time%22%3A1455854014%7D%7D;
+        expires=Thu, 19-May-2016 03:53:34 GMT; httponly; Max-Age=7776000; Path=/
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '299'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta": {"code": 200}, "data": {"username": "penneylicious", "bio":
+        "\"Nature does not hurry, yet everything is accomplished...\"", "website":
+        "http://www.dream-of-green.com", "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/12224164_1509200229374661_1127130738_a.jpg",
+        "full_name": "Penney Gadget", "counts": {"media": 9, "followed_by": 129, "follows":
+        166}, "id": "269242292"}}'
+    http_version: 
+  recorded_at: Fri, 19 Feb 2016 03:53:34 GMT
+- request:
+    method: get
+    uri: https://api.instagram.com/v1/users/self/media/recent/?access_token=269242292.27722ba.9ac02877c3ab47cda4bdbf2648f6876e
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Ratelimit-Remaining:
+      - '410'
+      Content-Language:
+      - en
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      Vary:
+      - Cookie, Accept-Language, Accept-Encoding
+      X-Ratelimit-Limit:
+      - '500'
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Date:
+      - Fri, 19 Feb 2016 03:53:34 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Set-Cookie:
+      - csrftoken=09cea0dac43ec20738bf568c28382359; expires=Fri, 17-Feb-2017 03:53:34
+        GMT; Max-Age=31449600; Path=/
+      - s_network=; expires=Fri, 19-Feb-2016 04:53:34 GMT; Max-Age=3600; Path=/
+      - sessionid=IGSC116dfb11bc6b501eb4aeee0597361974c4cae708dc24227ffe2de98891735396%3AyD2f5bK6TZrClJwFy7jlo0l65Sc1C7xS%3A%7B%22asns%22%3A%7B%2267.6.173.89%22%3A209%2C%22time%22%3A1455854014%7D%7D;
+        expires=Thu, 19-May-2016 03:53:34 GMT; httponly; Max-Age=7776000; Path=/
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1621'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"pagination": {}, "meta": {"code": 200}, "data": [{"attribution":
+        null, "tags": [], "type": "image", "location": {"latitude": 39.753785964,
+        "name": "Clear Creek Canyon", "longitude": -105.239999258, "id": 4911355},
+        "comments": {"count": 2}, "filter": "Clarendon", "created_time": "1455745494",
+        "link": "https://www.instagram.com/p/BB5yaqQo9fH/", "likes": {"count": 7},
+        "images": {"low_resolution": {"url": "https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/12677646_1039553569419064_1246118943_n.jpg?ig_cache_key=MTE4NzIwMTcxMTE5NzExNjM1OQ%3D%3D.2",
+        "width": 320, "height": 320}, "thumbnail": {"url": "https://scontent.cdninstagram.com/t51.2885-15/s150x150/e35/12677646_1039553569419064_1246118943_n.jpg?ig_cache_key=MTE4NzIwMTcxMTE5NzExNjM1OQ%3D%3D.2",
+        "width": 150, "height": 150}, "standard_resolution": {"url": "https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/12677646_1039553569419064_1246118943_n.jpg?ig_cache_key=MTE4NzIwMTcxMTE5NzExNjM1OQ%3D%3D.2",
+        "width": 640, "height": 640}}, "users_in_photo": [], "caption": {"created_time":
+        "1455745494", "text": "Another beautiful day at the crag", "from": {"username":
+        "penneylicious", "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/12224164_1509200229374661_1127130738_a.jpg",
+        "id": "269242292", "full_name": "Penney Gadget"}, "id": "1187201719124350395"},
+        "user_has_liked": false, "id": "1187201711197116359_269242292", "user": {"username":
+        "penneylicious", "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/12224164_1509200229374661_1127130738_a.jpg",
+        "id": "269242292", "full_name": "Penney Gadget"}}, {"attribution": null, "tags":
+        [], "type": "image", "location": {"latitude": 39.7392, "name": "Denver, Colorado",
+        "longitude": -104.984, "id": 4599325}, "comments": {"count": 3}, "filter":
+        "Clarendon", "created_time": "1450883020", "link": "https://www.instagram.com/p/_o3_BHI9ZT/",
+        "likes": {"count": 15}, "images": {"low_resolution": {"url": "https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/12328351_453780918156776_918552876_n.jpg?ig_cache_key=MTE0NjQxMjMyODI0NDQ2NzI4Mw%3D%3D.2",
+        "width": 320, "height": 320}, "thumbnail": {"url": "https://scontent.cdninstagram.com/t51.2885-15/s150x150/e35/12328351_453780918156776_918552876_n.jpg?ig_cache_key=MTE0NjQxMjMyODI0NDQ2NzI4Mw%3D%3D.2",
+        "width": 150, "height": 150}, "standard_resolution": {"url": "https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/12328351_453780918156776_918552876_n.jpg?ig_cache_key=MTE0NjQxMjMyODI0NDQ2NzI4Mw%3D%3D.2",
+        "width": 640, "height": 640}}, "users_in_photo": [], "caption": null, "user_has_liked":
+        false, "id": "1146412328244467283_269242292", "user": {"username": "penneylicious",
+        "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/12224164_1509200229374661_1127130738_a.jpg",
+        "id": "269242292", "full_name": "Penney Gadget"}}, {"attribution": null, "tags":
+        [], "type": "image", "location": {"latitude": 31.948282146, "name": "Cochise
+        Stronghold, AZ", "longitude": -109.949820889, "id": 265307082}, "comments":
+        {"count": 1}, "filter": "Clarendon", "created_time": "1450882986", "link":
+        "https://www.instagram.com/p/_o36w6I9ZM/", "likes": {"count": 6}, "images":
+        {"low_resolution": {"url": "https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/12353950_764934153636054_461909758_n.jpg?ig_cache_key=MTE0NjQxMjAzNTk2ODU4NzM0MA%3D%3D.2",
+        "width": 320, "height": 320}, "thumbnail": {"url": "https://scontent.cdninstagram.com/t51.2885-15/s150x150/e35/12353950_764934153636054_461909758_n.jpg?ig_cache_key=MTE0NjQxMjAzNTk2ODU4NzM0MA%3D%3D.2",
+        "width": 150, "height": 150}, "standard_resolution": {"url": "https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/12353950_764934153636054_461909758_n.jpg?ig_cache_key=MTE0NjQxMjAzNTk2ODU4NzM0MA%3D%3D.2",
+        "width": 640, "height": 640}}, "users_in_photo": [], "caption": null, "user_has_liked":
+        false, "id": "1146412035968587340_269242292", "user": {"username": "penneylicious",
+        "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/12224164_1509200229374661_1127130738_a.jpg",
+        "id": "269242292", "full_name": "Penney Gadget"}}, {"attribution": null, "tags":
+        [], "type": "image", "location": null, "comments": {"count": 0}, "filter":
+        "Hefe", "created_time": "1448474824", "link": "https://www.instagram.com/p/-hGtrZI9dl/",
+        "likes": {"count": 8}, "images": {"low_resolution": {"url": "https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/12276753_1693076244273065_1479274325_n.jpg?ig_cache_key=MTEyNjIxMDkwOTA2NzUzMjEzMw%3D%3D.2",
+        "width": 320, "height": 320}, "thumbnail": {"url": "https://scontent.cdninstagram.com/t51.2885-15/s150x150/e35/12276753_1693076244273065_1479274325_n.jpg?ig_cache_key=MTEyNjIxMDkwOTA2NzUzMjEzMw%3D%3D.2",
+        "width": 150, "height": 150}, "standard_resolution": {"url": "https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/12276753_1693076244273065_1479274325_n.jpg?ig_cache_key=MTEyNjIxMDkwOTA2NzUzMjEzMw%3D%3D.2",
+        "width": 640, "height": 640}}, "users_in_photo": [], "caption": null, "user_has_liked":
+        false, "id": "1126210909067532133_269242292", "user": {"username": "penneylicious",
+        "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/12224164_1509200229374661_1127130738_a.jpg",
+        "id": "269242292", "full_name": "Penney Gadget"}}, {"attribution": null, "tags":
+        [], "type": "image", "location": {"latitude": 35.771, "name": "Jemez Springs,
+        New Mexico", "longitude": -106.692, "id": 240355268}, "comments": {"count":
+        3}, "filter": "Clarendon", "created_time": "1448474733", "link": "https://www.instagram.com/p/-hGiozI9dL/",
+        "likes": {"count": 5}, "images": {"low_resolution": {"url": "https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/12277471_811418828967541_131742717_n.jpg?ig_cache_key=MTEyNjIxMDE1MDM2ODI3MDE1NQ%3D%3D.2",
+        "width": 320, "height": 320}, "thumbnail": {"url": "https://scontent.cdninstagram.com/t51.2885-15/s150x150/e35/12277471_811418828967541_131742717_n.jpg?ig_cache_key=MTEyNjIxMDE1MDM2ODI3MDE1NQ%3D%3D.2",
+        "width": 150, "height": 150}, "standard_resolution": {"url": "https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/12277471_811418828967541_131742717_n.jpg?ig_cache_key=MTEyNjIxMDE1MDM2ODI3MDE1NQ%3D%3D.2",
+        "width": 640, "height": 640}}, "users_in_photo": [], "caption": null, "user_has_liked":
+        false, "id": "1126210150368270155_269242292", "user": {"username": "penneylicious",
+        "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/12224164_1509200229374661_1127130738_a.jpg",
+        "id": "269242292", "full_name": "Penney Gadget"}}, {"attribution": null, "tags":
+        [], "type": "image", "location": null, "comments": {"count": 2}, "filter":
+        "Willow", "created_time": "1448474659", "link": "https://www.instagram.com/p/-hGZibI9c7/",
+        "likes": {"count": 8}, "images": {"low_resolution": {"url": "https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/12237524_1008220929216557_1504186574_n.jpg?ig_cache_key=MTEyNjIwOTUyNTA0Nzg3NTM4Nw%3D%3D.2",
+        "width": 320, "height": 320}, "thumbnail": {"url": "https://scontent.cdninstagram.com/t51.2885-15/s150x150/e35/12237524_1008220929216557_1504186574_n.jpg?ig_cache_key=MTEyNjIwOTUyNTA0Nzg3NTM4Nw%3D%3D.2",
+        "width": 150, "height": 150}, "standard_resolution": {"url": "https://scontent.cdninstagram.com/t51.2885-15/e35/12237524_1008220929216557_1504186574_n.jpg?ig_cache_key=MTEyNjIwOTUyNTA0Nzg3NTM4Nw%3D%3D.2",
+        "width": 640, "height": 640}}, "users_in_photo": [], "caption": null, "user_has_liked":
+        false, "id": "1126209525047875387_269242292", "user": {"username": "penneylicious",
+        "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/12224164_1509200229374661_1127130738_a.jpg",
+        "id": "269242292", "full_name": "Penney Gadget"}}, {"attribution": null, "tags":
+        [], "type": "image", "location": {"latitude": 35.103933742, "name": "Jemez
+        Springs, NM", "longitude": -106.606619285, "id": 238590039}, "comments": {"count":
+        0}, "filter": "Clarendon", "created_time": "1443399819", "link": "https://www.instagram.com/p/8J26T4I9d1/",
+        "likes": {"count": 13}, "images": {"low_resolution": {"url": "https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/11262721_1634794183432959_838858694_n.jpg?ig_cache_key=MTA4MzYzODY4Njk0MzUzMjkxNw%3D%3D.2",
+        "width": 320, "height": 320}, "thumbnail": {"url": "https://scontent.cdninstagram.com/t51.2885-15/s150x150/e35/11262721_1634794183432959_838858694_n.jpg?ig_cache_key=MTA4MzYzODY4Njk0MzUzMjkxNw%3D%3D.2",
+        "width": 150, "height": 150}, "standard_resolution": {"url": "https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/11262721_1634794183432959_838858694_n.jpg?ig_cache_key=MTA4MzYzODY4Njk0MzUzMjkxNw%3D%3D.2",
+        "width": 640, "height": 640}}, "users_in_photo": [], "caption": null, "user_has_liked":
+        false, "id": "1083638686943532917_269242292", "user": {"username": "penneylicious",
+        "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/12224164_1509200229374661_1127130738_a.jpg",
+        "id": "269242292", "full_name": "Penney Gadget"}}, {"attribution": null, "tags":
+        [], "type": "image", "location": {"latitude": 36.739533825, "name": "Bisti/De-Na-Zin
+        Wilderness", "longitude": -108.196194708, "id": 282809743}, "comments": {"count":
+        0}, "filter": "Clarendon", "created_time": "1443399692", "link": "https://www.instagram.com/p/8J2qyLo9dW/",
+        "likes": {"count": 9}, "images": {"low_resolution": {"url": "https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/11356606_1669544866595408_1421262629_n.jpg?ig_cache_key=MTA4MzYzNzYxOTk3MTMxNTU0Mg%3D%3D.2",
+        "width": 320, "height": 320}, "thumbnail": {"url": "https://scontent.cdninstagram.com/t51.2885-15/s150x150/e35/11356606_1669544866595408_1421262629_n.jpg?ig_cache_key=MTA4MzYzNzYxOTk3MTMxNTU0Mg%3D%3D.2",
+        "width": 150, "height": 150}, "standard_resolution": {"url": "https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/11356606_1669544866595408_1421262629_n.jpg?ig_cache_key=MTA4MzYzNzYxOTk3MTMxNTU0Mg%3D%3D.2",
+        "width": 640, "height": 640}}, "users_in_photo": [], "caption": null, "user_has_liked":
+        false, "id": "1083637619971315542_269242292", "user": {"username": "penneylicious",
+        "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/12224164_1509200229374661_1127130738_a.jpg",
+        "id": "269242292", "full_name": "Penney Gadget"}}, {"attribution": null, "tags":
+        [], "type": "image", "location": {"latitude": 36.739533825, "name": "Bisti/De-Na-Zin
+        Wilderness", "longitude": -108.196194708, "id": 282809743}, "comments": {"count":
+        0}, "filter": "Mayfair", "created_time": "1443399626", "link": "https://www.instagram.com/p/8J2istI9dR/",
+        "likes": {"count": 10}, "images": {"low_resolution": {"url": "https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/11379849_533313316844106_969757398_n.jpg?ig_cache_key=MTA4MzYzNzA2NDMzNTA4NzQ0MQ%3D%3D.2",
+        "width": 320, "height": 320}, "thumbnail": {"url": "https://scontent.cdninstagram.com/t51.2885-15/s150x150/e35/11379849_533313316844106_969757398_n.jpg?ig_cache_key=MTA4MzYzNzA2NDMzNTA4NzQ0MQ%3D%3D.2",
+        "width": 150, "height": 150}, "standard_resolution": {"url": "https://scontent.cdninstagram.com/t51.2885-15/s480x480/e35/11379849_533313316844106_969757398_n.jpg?ig_cache_key=MTA4MzYzNzA2NDMzNTA4NzQ0MQ%3D%3D.2",
+        "width": 480, "height": 480}}, "users_in_photo": [], "caption": null, "user_has_liked":
+        false, "id": "1083637064335087441_269242292", "user": {"username": "penneylicious",
+        "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/12224164_1509200229374661_1127130738_a.jpg",
+        "id": "269242292", "full_name": "Penney Gadget"}}]}'
+    http_version: 
+  recorded_at: Fri, 19 Feb 2016 03:53:34 GMT
+- request:
+    method: get
+    uri: https://api.instagram.com/v1/media/1187201711197116359_269242292/comments?access_token=269242292.27722ba.9ac02877c3ab47cda4bdbf2648f6876e
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Ratelimit-Remaining:
+      - '409'
+      Content-Language:
+      - en
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      Vary:
+      - Cookie, Accept-Language, Accept-Encoding
+      X-Ratelimit-Limit:
+      - '500'
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Date:
+      - Fri, 19 Feb 2016 03:53:34 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Set-Cookie:
+      - csrftoken=adc40d614e7a1e9637f882524d4084b1; expires=Fri, 17-Feb-2017 03:53:34
+        GMT; Max-Age=31449600; Path=/
+      - s_network=; expires=Fri, 19-Feb-2016 04:53:34 GMT; Max-Age=3600; Path=/
+      - sessionid=IGSC81af7cad9848c51cf6b60836271b079a76df171fb98756262ce376c5a08d6243%3ABUyX6ERlxysRJzv4vwjNBKJc6bJeymr1%3A%7B%22asns%22%3A%7B%2267.6.173.89%22%3A209%2C%22time%22%3A1455854014%7D%7D;
+        expires=Thu, 19-May-2016 03:53:34 GMT; httponly; Max-Age=7776000; Path=/
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '352'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta": {"code": 200}, "data": [{"created_time": "1455824793", "text":
+        "This is a beautiful photo!", "from": {"username": "artofmoxie", "profile_picture":
+        "https://scontent.cdninstagram.com/t51.2885-19/10706750_852405121512571_1455045308_a.jpg",
+        "id": "16502037", "full_name": "Beth"}, "id": "1187866924867114535"}, {"created_time":
+        "1455826225", "text": "troll troll troll troll you''ve been trolled", "from":
+        {"username": "justinpease1", "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/12748419_1752098388353622_1993632129_a.jpg",
+        "id": "224650346", "full_name": "Justin Pease"}, "id": "1187878933654394581"}]}'
+    http_version: 
+  recorded_at: Fri, 19 Feb 2016 03:53:35 GMT
+- request:
+    method: get
+    uri: https://api.instagram.com/v1/media/1146412328244467283_269242292/comments?access_token=269242292.27722ba.9ac02877c3ab47cda4bdbf2648f6876e
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Ratelimit-Remaining:
+      - '408'
+      Content-Language:
+      - en
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      Vary:
+      - Cookie, Accept-Language, Accept-Encoding
+      X-Ratelimit-Limit:
+      - '500'
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Date:
+      - Fri, 19 Feb 2016 03:53:35 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Set-Cookie:
+      - csrftoken=3e6f2e4b06a5f33e13254b9deda5e39c; expires=Fri, 17-Feb-2017 03:53:35
+        GMT; Max-Age=31449600; Path=/
+      - s_network=; expires=Fri, 19-Feb-2016 04:53:35 GMT; Max-Age=3600; Path=/
+      - sessionid=IGSC479359ad7f35e15dfb14c54360db85518e8e26cacac606e3614ee3c4693e1c39%3AoEOXawg4t0w7AOaYGTtcV3JV4oocs32P%3A%7B%22asns%22%3A%7B%2267.6.173.89%22%3A209%2C%22time%22%3A1455854015%7D%7D;
+        expires=Thu, 19-May-2016 03:53:35 GMT; httponly; Max-Age=7776000; Path=/
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '249'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta": {"code": 200}, "data": [{"created_time": "1455826237", "text":
+        "picture comment!!!!!!!!", "from": {"username": "justinpease1", "profile_picture":
+        "https://scontent.cdninstagram.com/t51.2885-19/s150x150/12748419_1752098388353622_1993632129_a.jpg",
+        "id": "224650346", "full_name": "Justin Pease"}, "id": "1187879034300913376"}]}'
+    http_version: 
+  recorded_at: Fri, 19 Feb 2016 03:53:35 GMT
+- request:
+    method: get
+    uri: https://api.instagram.com/v1/media/1146412035968587340_269242292/comments?access_token=269242292.27722ba.9ac02877c3ab47cda4bdbf2648f6876e
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Ratelimit-Remaining:
+      - '407'
+      Content-Language:
+      - en
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      Vary:
+      - Cookie, Accept-Language, Accept-Encoding
+      X-Ratelimit-Limit:
+      - '500'
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Date:
+      - Fri, 19 Feb 2016 03:53:35 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Set-Cookie:
+      - csrftoken=a6e4f9534cc03ecf0f0b508d4088a575; expires=Fri, 17-Feb-2017 03:53:35
+        GMT; Max-Age=31449600; Path=/
+      - s_network=; expires=Fri, 19-Feb-2016 04:53:35 GMT; Max-Age=3600; Path=/
+      - sessionid=IGSC80304eceff800bd2e780bf561fccf957958c2dd23dc134d4b396df56befb51bc%3AG8fklY3BtnRP5sbSOLtsjDNgW41BMsU2%3A%7B%22asns%22%3A%7B%2267.6.173.89%22%3A209%2C%22time%22%3A1455854015%7D%7D;
+        expires=Thu, 19-May-2016 03:53:35 GMT; httponly; Max-Age=7776000; Path=/
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '237'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta": {"code": 200}, "data": [{"created_time": "1455824907", "text":
+        "Yay climbing!", "from": {"username": "artofmoxie", "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/10706750_852405121512571_1455045308_a.jpg",
+        "id": "16502037", "full_name": "Beth"}, "id": "1187867878299522694"}]}'
+    http_version: 
+  recorded_at: Fri, 19 Feb 2016 03:53:35 GMT
+- request:
+    method: get
+    uri: https://api.instagram.com/v1/media/1126210909067532133_269242292/comments?access_token=269242292.27722ba.9ac02877c3ab47cda4bdbf2648f6876e
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Ratelimit-Remaining:
+      - '406'
+      Content-Language:
+      - en
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      Vary:
+      - Cookie, Accept-Language
+      X-Ratelimit-Limit:
+      - '500'
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Date:
+      - Fri, 19 Feb 2016 03:53:36 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Set-Cookie:
+      - csrftoken=e649103750991e07c21a6265697fbcc0; expires=Fri, 17-Feb-2017 03:53:36
+        GMT; Max-Age=31449600; Path=/
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '35'
+    body:
+      encoding: UTF-8
+      string: '{"meta": {"code": 200}, "data": []}'
+    http_version: 
+  recorded_at: Fri, 19 Feb 2016 03:53:36 GMT
+- request:
+    method: get
+    uri: https://api.instagram.com/v1/media/1126210150368270155_269242292/comments?access_token=269242292.27722ba.9ac02877c3ab47cda4bdbf2648f6876e
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Ratelimit-Remaining:
+      - '405'
+      Content-Language:
+      - en
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      Vary:
+      - Cookie, Accept-Language, Accept-Encoding
+      X-Ratelimit-Limit:
+      - '500'
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Date:
+      - Fri, 19 Feb 2016 03:53:36 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Set-Cookie:
+      - csrftoken=8069476750782f6098c507799257253b; expires=Fri, 17-Feb-2017 03:53:36
+        GMT; Max-Age=31449600; Path=/
+      - s_network=; expires=Fri, 19-Feb-2016 04:53:36 GMT; Max-Age=3600; Path=/
+      - sessionid=IGSC7f2db65dc251c4a7f2ebf8c80ccf5bb8240b1122d3763d5b843c12d4d5dc9d2e%3Aw8fEOmuBAMsiGKCtby78NNYKglTKOkNM%3A%7B%22asns%22%3A%7B%2267.6.173.89%22%3A209%2C%22time%22%3A1455854016%7D%7D;
+        expires=Thu, 19-May-2016 03:53:36 GMT; httponly; Max-Age=7776000; Path=/
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '325'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta": {"code": 200}, "data": [{"created_time": "1455824892", "text":
+        "Amazing!", "from": {"username": "artofmoxie", "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/10706750_852405121512571_1455045308_a.jpg",
+        "id": "16502037", "full_name": "Beth"}, "id": "1187867750809458301"}, {"created_time":
+        "1455826263", "text": "more pretty", "from": {"username": "justinpease1",
+        "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/12748419_1752098388353622_1993632129_a.jpg",
+        "id": "224650346", "full_name": "Justin Pease"}, "id": "1187879250483730162"}]}'
+    http_version: 
+  recorded_at: Fri, 19 Feb 2016 03:53:36 GMT
+- request:
+    method: get
+    uri: https://api.instagram.com/v1/media/1126209525047875387_269242292/comments?access_token=269242292.27722ba.9ac02877c3ab47cda4bdbf2648f6876e
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Ratelimit-Remaining:
+      - '404'
+      Content-Language:
+      - en
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      Vary:
+      - Cookie, Accept-Language
+      X-Ratelimit-Limit:
+      - '500'
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Date:
+      - Fri, 19 Feb 2016 03:53:36 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Set-Cookie:
+      - csrftoken=17d6af2fad5263d770096658b722fe93; expires=Fri, 17-Feb-2017 03:53:36
+        GMT; Max-Age=31449600; Path=/
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '35'
+    body:
+      encoding: UTF-8
+      string: '{"meta": {"code": 200}, "data": []}'
+    http_version: 
+  recorded_at: Fri, 19 Feb 2016 03:53:37 GMT
+- request:
+    method: get
+    uri: https://api.instagram.com/v1/media/1083638686943532917_269242292/comments?access_token=269242292.27722ba.9ac02877c3ab47cda4bdbf2648f6876e
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Ratelimit-Remaining:
+      - '403'
+      Content-Language:
+      - en
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      Vary:
+      - Cookie, Accept-Language
+      X-Ratelimit-Limit:
+      - '500'
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Date:
+      - Fri, 19 Feb 2016 03:53:37 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Set-Cookie:
+      - csrftoken=2e14dedc803d3e39acdb4d417647024d; expires=Fri, 17-Feb-2017 03:53:37
+        GMT; Max-Age=31449600; Path=/
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '35'
+    body:
+      encoding: UTF-8
+      string: '{"meta": {"code": 200}, "data": []}'
+    http_version: 
+  recorded_at: Fri, 19 Feb 2016 03:53:37 GMT
+- request:
+    method: get
+    uri: https://api.instagram.com/v1/media/1083637619971315542_269242292/comments?access_token=269242292.27722ba.9ac02877c3ab47cda4bdbf2648f6876e
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Ratelimit-Remaining:
+      - '402'
+      Content-Language:
+      - en
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      Vary:
+      - Cookie, Accept-Language
+      X-Ratelimit-Limit:
+      - '500'
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Date:
+      - Fri, 19 Feb 2016 03:53:37 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Set-Cookie:
+      - csrftoken=1ae5b9f95524ade30e638316fca0c7fe; expires=Fri, 17-Feb-2017 03:53:37
+        GMT; Max-Age=31449600; Path=/
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '35'
+    body:
+      encoding: UTF-8
+      string: '{"meta": {"code": 200}, "data": []}'
+    http_version: 
+  recorded_at: Fri, 19 Feb 2016 03:53:37 GMT
+- request:
+    method: get
+    uri: https://api.instagram.com/v1/media/1083637064335087441_269242292/comments?access_token=269242292.27722ba.9ac02877c3ab47cda4bdbf2648f6876e
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Ratelimit-Remaining:
+      - '401'
+      Content-Language:
+      - en
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      Vary:
+      - Cookie, Accept-Language
+      X-Ratelimit-Limit:
+      - '500'
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Date:
+      - Fri, 19 Feb 2016 03:53:38 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Set-Cookie:
+      - csrftoken=a8e591a25322bc08b7b522649deeef0e; expires=Fri, 17-Feb-2017 03:53:38
+        GMT; Max-Age=31449600; Path=/
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '35'
+    body:
+      encoding: UTF-8
+      string: '{"meta": {"code": 200}, "data": []}'
+    http_version: 
+  recorded_at: Fri, 19 Feb 2016 03:53:38 GMT
+recorded_with: VCR 3.0.1

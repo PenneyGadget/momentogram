@@ -11,6 +11,7 @@ describe "access dashboard from root page" do
       expect(current_path).to eq(dashboard_path)
       expect(page).to have_link "http://www.dream-of-green.com"
       expect(page).to have_content "Followers:"
+      expect(page).to have_content "Following:"
       expect(page).to have_link "Logout"
     end
   end
