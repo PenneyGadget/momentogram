@@ -98,11 +98,18 @@ img.img-circle.img-thumbnail.home-image {
   opacity: 0;
 }
 
-.follow-header, .peeps {
+.follow-header, .peeps, .trend-header {
   color: #FAF7D7;
   padding-top: 50px;
   font-family: 'Amatic SC';
 }
 .peeps {
   font-size: 1.6em;
+}
+
+.feed-image {
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 2px;
+  margin-bottom: 20px;
 }

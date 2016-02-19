@@ -1,0 +1,18 @@
+<div class="container-home"><br><br>
+  <%= link_to "Home", dashboard_path, class: "btn btn-lg btn-default btn-home" %><br>
+  <h1 class="trend-header">Trending...</h1>
+  <% @feed.each do |image| %>
+  <div class="row">
+
+    <div class="col-md-4"></div>
+      <div class="col-md-4 feed-image rounded peeps">
+        <%= image[:caption][:text] %><br>
+        <%= image_tag(image[:images][:low_resolution][:url]) %><br>
+        <i class="glyphicon glyphicon-heart"></i>:     <%= image[:likes][:count] %><br>
+        <%= link_to image[:caption][:from][:username], "https://www.instagram.com/#{image[:caption][:from][:username]}/" %><br><br><br>
+      </div>
+    <div class="col-md-4"></div>
+  </div>
+  <% end %>
+  <%= link_to "Home", dashboard_path, class: "btn btn-lg btn-default btn-home" %><br><br><br><br>
+</div>

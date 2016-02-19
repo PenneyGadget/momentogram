@@ -48,7 +48,7 @@ RSpec.configure do |config|
       bio: "I climb rocks!",
       website: "http://www.dream-of-green.com",
     },
-    credentials: {token: ENV["MY_TOKEN"]}
+    credentials: {token: ENV["TESTING_TOKEN"]}
     })
 end
 

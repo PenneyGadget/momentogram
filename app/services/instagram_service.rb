@@ -20,7 +20,12 @@ class InstagramService
     parse(connection.get("users/self/followed-by?access_token=#{current_user.token}"))
   end
 
+  def friends_media(friend_id)
+    parse(connection.get("users/#{friend_id}/media/recent/?access_token=#{current_user.token}"))
+  end
+
   def user_media
+    # binding.pry
     photos_data = parse(connection.get("users/self/media/recent/?access_token=#{current_user.token}"))
     photos_data[:data].map do |photo|
       media = Media.new({image_url: photo[:images][:low_resolution][:url],

@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   get 'follows', to: 'follows#show'
 
+  get 'feed', to: 'feed#show'
+
   get 'dashboard', to: 'dashboard#show'
   root to: 'home#show'
 

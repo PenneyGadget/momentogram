@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.instagram.com/v1/users/self/?access_token=269242292.27722ba.9ac02877c3ab47cda4bdbf2648f6876e
+    uri: https://api.instagram.com/v1/users/self/?access_token=269242292.27722ba.66ee52d8aefc43428d1092ad2ce0e526
     body:
       encoding: US-ASCII
       string: ''
@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       X-Ratelimit-Remaining:
-      - '499'
+      - '391'
       Content-Language:
       - en
       Expires:
@@ -33,15 +33,15 @@ http_interactions:
       Cache-Control:
       - private, no-cache, no-store, must-revalidate
       Date:
-      - Fri, 19 Feb 2016 16:39:10 GMT
+      - Fri, 19 Feb 2016 21:57:48 GMT
       Content-Type:
       - application/json; charset=utf-8
       Set-Cookie:
-      - csrftoken=32968e86d70cd24e043fc2df746c5550; expires=Fri, 17-Feb-2017 16:39:10
+      - csrftoken=bf1d9dd7ab3604de85197cf917f36011; expires=Fri, 17-Feb-2017 21:57:48
         GMT; Max-Age=31449600; Path=/
-      - s_network=; expires=Fri, 19-Feb-2016 17:39:10 GMT; Max-Age=3600; Path=/
-      - sessionid=IGSC2de182c8a5bad41bba35d207033c09538135bfe0fb12d9ea868fc453f8ada581%3AfonknogWKgnLbFubMjrxJpspaEQu26Ff%3A%7B%22asns%22%3A%7B%2263.145.15.98%22%3A209%2C%22time%22%3A1455899950%7D%7D;
-        expires=Thu, 19-May-2016 16:39:10 GMT; httponly; Max-Age=7776000; Path=/
+      - s_network=; expires=Fri, 19-Feb-2016 22:57:48 GMT; Max-Age=3600; Path=/
+      - sessionid=IGSC25083c727185dc9fb92b17cc6df8c30c9f98de7a58c7f30e5c9e41741c654aac%3AkrgKo3XWgZi4AYDaPjCefPPycCHMoxBf%3A%7B%22asns%22%3A%7B%2263.145.15.98%22%3A209%2C%22time%22%3A1455919068%7D%7D;
+        expires=Thu, 19-May-2016 21:57:48 GMT; httponly; Max-Age=7776000; Path=/
       Connection:
       - keep-alive
       Content-Length:
@@ -51,8 +51,8 @@ http_interactions:
       string: '{"meta": {"code": 200}, "data": {"username": "penneylicious", "bio":
         "\"Nature does not hurry, yet everything is accomplished...\"", "website":
         "http://www.dream-of-green.com", "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/12224164_1509200229374661_1127130738_a.jpg",
-        "full_name": "Penney Gadget", "counts": {"media": 9, "followed_by": 129, "follows":
+        "full_name": "Penney Gadget", "counts": {"media": 9, "followed_by": 130, "follows":
         166}, "id": "269242292"}}'
     http_version: 
-  recorded_at: Fri, 19 Feb 2016 16:39:10 GMT
+  recorded_at: Fri, 19 Feb 2016 21:57:48 GMT
 recorded_with: VCR 3.0.1
