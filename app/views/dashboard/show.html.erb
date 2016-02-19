@@ -7,8 +7,8 @@
     <h3 class="home user-email"><%= current_user.email %></h3><br>
     <h3 class="home user-bio"><%= current_user.bio %></h3><br>
     <h3 class="home user-website"><%= link_to current_user.website_url, current_user.website_url %></h3><br>
-    <h4 class="home">Followers: <%= @user_info[:data][:counts][:followed_by] %></h4>
-    <h4 class="home">Following: <%= @user_info[:data][:counts][:follows] %></h4>
+    <h4 class="home"><%= link_to "Followers: ", follows_path %><%= @user_info[:data][:counts][:followed_by] %></h4>
+    <h4 class="home"><%= link_to "Following: ", follows_path%><%= @user_info[:data][:counts][:follows] %></h4>
   </div>
   <div class="col-md-2"></div>
   <div class="dashboard-buttons col-md-4">

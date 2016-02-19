@@ -1,0 +1,25 @@
+<div class="container-home">
+  <div class="row">
+    <div class="following">
+      <div><h1 class="follow-header"><%= current_user.nickname %> is following:</h1></div>
+      <% @following.each do |follower| %>
+        <div class="col-md-6 peeps">
+          <%= link_to follower[:username], "https://www.instagram.com/#{follower[:username]}/" %><br><br>
+          <%= image_tag follower[:profile_picture], class: "img-circle img-thumbnail home-image" %>
+        </div>
+      <% end %>
+    </div><!-- end of following -->
+  </div><br><br><!-- end of row -->
+
+  <div class="row">
+    <div class="followers">
+      <div><h1 class="follow-header"><%= current_user.nickname %> is followed by:</h1></div>
+      <% @followers.each do |follower| %>
+        <div class="col-md-6 peeps">
+          <%= link_to follower[:username], "https://www.instagram.com/#{follower[:username]}/" %><br><br>
+          <%= image_tag follower[:profile_picture], class: "img-circle img-thumbnail home-image" %>
+        </div>
+      <% end %>
+    </div><!-- end of followers -->
+  </div><br><br><br><br><!-- end of row -->
+</div><!-- end of container home -->

@@ -10,8 +10,8 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require custom.js
 //= require jquery
 //= require jquery_ujs
+//= require custom.js
 //= require_tree .
 //= require bootstrap-sprockets

@@ -113,8 +113,8 @@
         0,
         null,
         null,
-        1,
-        0,
+        null,
+        null,
         null,
         null,
         1,
@@ -176,8 +176,13 @@
         null,
         null,
         null
+      ],
+      "/Users/Penney/Documents/Turing/3_module/projects/momentogram/app/controllers/follows_controller.rb": [
+        0,
+        0,
+        0
       ]
     },
-    "timestamp": 1455902084
+    "timestamp": 1455904557
   }
 }

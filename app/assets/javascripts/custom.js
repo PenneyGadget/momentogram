@@ -1,3 +1,3 @@
 $(document).ready(function() {
-  $(".image-comments").fadeIn(slow);
+  $(".image-comments").delay(1000).fadeTo("slow", 0.9);
 });
