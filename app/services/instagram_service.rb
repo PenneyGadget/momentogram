@@ -4,8 +4,6 @@ class InstagramService
   def initialize(current_user)
     @current_user = current_user
     @connection = Faraday.new(:url => 'https://api.instagram.com/v1/') do |faraday|
-       faraday.request :url_encoded
-       faraday.response :logger
        faraday.adapter Faraday.default_adapter
      end
   end
@@ -20,6 +18,10 @@ class InstagramService
 
   def user_followers
     parse(connection.get("users/self/followed-by?access_token=#{current_user.token}"))
+  end
+
+  def find_media_object(media_id)
+    parse(connection.get("media/#{media_id}?access_token=#{current_user.token}"))
   end
 
   def user_media
@@ -54,10 +56,6 @@ class InstagramService
       media.caption = photo[:caption][:text]
     end
     media
-  end
-
-  def find_media_object(media_id)
-    parse(connection.get("media/#{media_id}?access_token=#{current_user.token}"))
   end
 
   private

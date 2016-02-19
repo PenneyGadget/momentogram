@@ -1,5 +1,15 @@
 <div class="container-home">
-  <div class="image-show">
-    <%= image_tag(@image) %>
+  <div class="row">
+    <div class="col-md-4"></div>
+      <div class="image-show rounded col-md-4"><%= image_tag(@image) %></div><br>
+      <div class="col-md-4"></div>
+
+      <div class="row">
+        <div class="image-comments col-md-4 col-md-offset-4">
+          <% @comments.each do |comment| %>
+            " <%= comment %> "<br><br>
+          <% end %>
+      </div>
+    </div>
   </div>
 </div>
