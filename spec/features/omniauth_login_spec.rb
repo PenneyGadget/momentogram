@@ -13,6 +13,9 @@ describe "access dashboard from root page" do
       expect(page).to have_content "Followers:"
       expect(page).to have_content "Following:"
       expect(page).to have_link "Logout"
+
+      click_on "Logout"
+      expect(current_path).to eq(root_path)
     end
   end
 end

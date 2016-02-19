@@ -4,7 +4,7 @@
     <% @images.each do |image| %>
     <div class="col-md-6 user-post rounded">
       <div class="user-image">
-        <%= link_to image_tag(image.image_url), photo_path(image.media_id) %>
+        <%= link_to image_tag(image.image_url), photo_path(image.media_id), id: "media-#{image.media_id}" %>
       </div><br>
       <div class="image-info rounded">
         <%= image.caption %><br>

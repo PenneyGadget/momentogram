@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       X-Ratelimit-Remaining:
-      - '422'
+      - '498'
       Content-Language:
       - en
       Expires:
@@ -33,15 +33,15 @@ http_interactions:
       Cache-Control:
       - private, no-cache, no-store, must-revalidate
       Date:
-      - Fri, 19 Feb 2016 03:42:58 GMT
+      - Fri, 19 Feb 2016 16:39:18 GMT
       Content-Type:
       - application/json; charset=utf-8
       Set-Cookie:
-      - csrftoken=6f8f599eb320e34b5abdb641e96f667d; expires=Fri, 17-Feb-2017 03:42:58
+      - csrftoken=be70e5952a434569d6231ed9c647646a; expires=Fri, 17-Feb-2017 16:39:18
         GMT; Max-Age=31449600; Path=/
-      - s_network=; expires=Fri, 19-Feb-2016 04:42:58 GMT; Max-Age=3600; Path=/
-      - sessionid=IGSC6ac4783f4e33bea9b1cb607efb558eb535959533da1ddbd94b044091f494848c%3A0QkcoOowkXZtEnLHbuDAV13K0yfj3raz%3A%7B%22asns%22%3A%7B%2267.6.173.89%22%3A209%2C%22time%22%3A1455853378%7D%7D;
-        expires=Thu, 19-May-2016 03:42:58 GMT; httponly; Max-Age=7776000; Path=/
+      - s_network=; expires=Fri, 19-Feb-2016 17:39:18 GMT; Max-Age=3600; Path=/
+      - sessionid=IGSC1b78db3827b14260be006888b80668d4b49c0d5a19e8130bd5c417ef7892b052%3ADZvO9PTrzG6WzyxKvg86kQkxTC8cUTJ1%3A%7B%22asns%22%3A%7B%2263.145.15.98%22%3A209%2C%22time%22%3A1455899958%7D%7D;
+        expires=Thu, 19-May-2016 16:39:18 GMT; httponly; Max-Age=7776000; Path=/
       Connection:
       - keep-alive
       Content-Length:
@@ -54,5 +54,5 @@ http_interactions:
         "full_name": "Penney Gadget", "counts": {"media": 9, "followed_by": 129, "follows":
         166}, "id": "269242292"}}'
     http_version: 
-  recorded_at: Fri, 19 Feb 2016 03:42:58 GMT
+  recorded_at: Fri, 19 Feb 2016 16:39:18 GMT
 recorded_with: VCR 3.0.1
