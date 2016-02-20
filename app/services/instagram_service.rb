@@ -5,28 +5,28 @@ class InstagramService
     @current_user = current_user
     @connection = Faraday.new(:url => 'https://api.instagram.com/v1/') do |faraday|
        faraday.adapter Faraday.default_adapter
+       faraday.params['access_token'] = current_user.token
      end
   end
 
   def user_info
-    parse(connection.get("users/self/?access_token=#{current_user.token}"))
+    parse(connection.get("users/self/"))
   end
 
   def user_follows
-    parse(connection.get("users/self/follows?access_token=#{current_user.token}"))
+    parse(connection.get("users/self/follows"))
   end
 
   def user_followers
-    parse(connection.get("users/self/followed-by?access_token=#{current_user.token}"))
+    parse(connection.get("users/self/followed-by"))
   end
 
   def friends_media(friend_id)
-    parse(connection.get("users/#{friend_id}/media/recent/?access_token=#{current_user.token}"))
+    parse(connection.get("users/#{friend_id}/media/recent/"))
   end
 
   def user_media
-    # binding.pry
-    photos_data = parse(connection.get("users/self/media/recent/?access_token=#{current_user.token}"))
+    photos_data = parse(connection.get("users/self/media/recent/"))
     photos_data[:data].map do |photo|
       media = Media.new({image_url: photo[:images][:low_resolution][:url],
                          likes: photo[:likes][:count],
@@ -39,7 +39,7 @@ class InstagramService
 
   def add_comments(media_id)
     comments = []
-    parse(connection.get("media/#{media_id}/comments?access_token=#{current_user.token}"))[:data].each do |comment|
+    parse(connection.get("media/#{media_id}/comments"))[:data].each do |comment|
       comments << comment[:text]
     end
     comments
